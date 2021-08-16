@@ -20,7 +20,7 @@ app.get("/", function (req, res) {
 
 // your first API endpoint...
 app.get("/api/hello", function (req, res) {
-  res.json({ greeting: "hello Prahlad API" });
+  res.json({ greeting: "hello Prahlad Timalsna API" });
 });
 
 app.get("/api/:date_string", function (req, res) {
