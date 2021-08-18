@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000;
 // mongoose.connect(database_uri,{ useNewUrlParser: true,useUnifiedTopology: true} );
 
 mongoose
-  .connect(process.env.MONGO_DB_PROD_URI, {
+  .connect(process.env.env.name, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
