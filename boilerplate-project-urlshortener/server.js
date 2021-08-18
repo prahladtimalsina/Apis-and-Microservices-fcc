@@ -1,4 +1,4 @@
-// const database_uri = 'mongodb+srv://PraHlad:*PraHlaD123#@cluster0.zkuzx.mongodb.net/url-shortener?retryWrites=true&w=majority'
+
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000;
 // mongoose.connect(database_uri,{ useNewUrlParser: true,useUnifiedTopology: true} );
 
 mongoose
-  .connect(process.env.MONGO_PROD_URI, {
+  .connect(process.env.env.name, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
